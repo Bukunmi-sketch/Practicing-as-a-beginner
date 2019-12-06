@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function c(val){document.getElementById("d").value=val;}
+function v(val){document.getElementById("d").value+=val;}
+function e(){try {c(eval(document.getElementById("d").value))}catch(e){c('Error')}}
+
+</script>
+</head>
+<body>
+<div class="box">
+<div class="display">
+<input type="text"readonly size="18"id="d"></div>
+<div class="keys">
+<p><input type="button"class="button gray"value="mrc"onclick='c("")'>
+<input type="button"class="button gray"value="m-"onclick='c("")'>
+<input type="button"class="button gray"value="m+"onclick='c("")'>
+<input type="button"class="button bucz"value="/"onclick='v("/")'></p>
+
+<p><input type="button"class="button"value="7"onclick='v("7")'>
+<input type="button"class="button"value="8"onclick='v("8")'>
+<input type="button"class="button"value="9"onclick='v("9")'>
+<input type="button"class="button bucz"value="*"onclick='v("*")'></p>
+
+<p><input type="button"class="button"value="4"onclick='v("4")'>
+<input type="button"class="button"value="5"onclick='v("5")'>
+<input type="button"class="button"value="6"onclick='v("6")'>
+<input type="button"class="button bucz"value="-"onclick='v("-")'></p>
+
+<p><input type="button"class="button"value="1"onclick='v("1")'>
+<input type="button"class="button"value="2"onclick='v("2")'>
+<input type="button"class="button"value="3"onclick='v("3")'>
+<input type="button"class="button bucz"value="+"onclick='v("+")'></p>
+
+<p><input type="button"class="button black"value ="0" onclick ='v("0")'>
+<input type="button"class="button black"value="."onclick='v(".")'>
+<input type="button"class="button"value="C"onclick='c("")'>
+<input type="button"class="button bucz"value="="onclick='e()'></p>
+</div>
+</div>
+</body>
+</html>
+<style type="text/css">
+
+Body
+{background-color:black;}
+
+.box
+{background-color:Purple;
+height:300px;
+width:250px;
+border-radius:20px;
+position:relative;
+top:200px;
+left:40%;}
+
+.display
+{background-color:purple;
+width:200px;
+position:relative;
+left:35px;
+top:10px;
+height:40px;}
+
+.display input
+{background-color:green;
+position:relative;
+left:2px;
+top:1px;
+width:200px;
+Border-radius:4px;
+color:black;
+text-align:right;
+font-size:40px;}
+
+.keys
+{position:relative;
+top:30px;}
+
+.button
+{Background-color:orange;
+margin-left:23px;
+width:32px;
+height:28px;
+border-radius:5px;
+cursor:pointer;
+border-top:2px solid transparent;}
+
+.button.gray
+{background-color:white;
+color:brown;
+border-buttom:3px purple;}
+
+.button.bucz
+{background-color:yellow;}
+</style>
