@@ -1,2 +1,1 @@
-# interactive-calculator
-To calculate
+Practice
